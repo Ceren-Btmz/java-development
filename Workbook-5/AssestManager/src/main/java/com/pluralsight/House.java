@@ -54,9 +54,12 @@ public class House extends Asset {
         } else if (condition == 1) {
             acc += (130 * squareFoot);
         } else if (condition == 1) {
-            acc += 90 * squareFoot){
+            acc += (90 * squareFoot);
         } else {
-            acc += 80 * squareFoot)
-            }
+            acc += (80 * squareFoot);
         }
+    value = acc * 0.25;
+    return value;
+
     }
+}
