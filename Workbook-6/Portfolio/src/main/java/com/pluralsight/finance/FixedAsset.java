@@ -11,4 +11,5 @@ public abstract class FixedAsset implements IValuable {
 
     public abstract class getValue();
 
+
 }

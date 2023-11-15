@@ -2,7 +2,6 @@ package com.pluralsight.finance;
 
 public class BankAccount implements IValuable {
     private String name;
-
     private String accountNumber;
     private double balance;
 

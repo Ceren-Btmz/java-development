@@ -2,6 +2,7 @@ package com.pluralsight;
 
 import com.pluralsight.finance.BankAccount;
 import com.pluralsight.finance.IValuable;
+import com.pluralsight.finance.Portfolio;
 
 public class FinanceApplication {
     public static void main(String[] args) {
@@ -10,5 +11,15 @@ public class FinanceApplication {
 
         account1.deposit(100);
 
+        Portfolio port = new Portfolio("yearup", "Ceren");
+
+        port.add(account1);
+        port.add(account2);
+
+        System.out.println(port.getMostValuable());
+        System.out.println(port.getLeastValuable());
+        System.out.println(port.getValue());
     }
+
+    public void displayMenu() {
 }
