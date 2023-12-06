@@ -10,7 +10,7 @@ public class MainApp
         // The world is your canvas
         World world = new World(200, 200);
         Turtle turtle = new Turtle(world,-100, -100);
-        
+
         int width = 200;
         int height = 200;
 
@@ -21,17 +21,40 @@ public class MainApp
         double hypotenuse = Math.sqrt(widthSquared + heightSquared);
 
 
-        turtle.setPenWidth(3);
-        turtle.setColor(Color.GREEN);
+//        turtle.setPenWidth(3);
+//        turtle.setColor(Color.GREEN);
+//
+//        turtle.turnRight(45);
+//        turtle.forward(hypotenuse);
+//
+//        turtle.penUp();
+//        turtle.goTo(100, 100);
+//        turtle.turnRight(90);
+//
+//        turtle.penDown();
+//        turtle.forward(hypotenuse);
 
-        turtle.turnRight(45);
-        turtle.forward(hypotenuse);
 
-        turtle.penUp();
-        turtle.goTo(100, 100);
-        turtle.turnRight(90);
 
-        turtle.penDown();
-        turtle.forward(hypotenuse);
+        World world2 = new World(200, 200);
+        Turtle turtle2 = new Turtle(world,50, -50);
+
+        turtle2.setPenWidth(3);
+        turtle2.setColor(Color.GREEN);
+
+        turtle2.penDown();
+
+        turtle2.turnRight(90);
+        turtle2.forward(100);
+
+        turtle2.turnRight(90);
+        turtle2.forward(100);
+
+        turtle2.turnRight(90);
+        turtle2.forward(100);
+
+        turtle2.turnRight(90);
+        turtle2.forward(100);
+
     }
 }
